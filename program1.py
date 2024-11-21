@@ -7,7 +7,7 @@ _rt = RuntimeEngine()
 
 _dynapyt_ast_ = "/Users/marcus/repos/branch-cov/program1.py" + ".orig"
 try:
-    a = 10
+    a = 20
     if _rt._enter_if_(_dynapyt_ast_, 2, a < 20):
         b = 20
         while _rt._enter_while_(_dynapyt_ast_, 0, a < b):

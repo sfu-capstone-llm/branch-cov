@@ -1,5 +1,5 @@
 # https://github.com/sola-st/DynaPyt/blob/main/tutorial/task2/main.py
-a = 10
+a = 20
 if a < 20:
     b = 20
     while a < b:
