@@ -1,7 +1,25 @@
+import ast
 from typing import Optional
 
 from dynapyt.analyses.BaseAnalysis import BaseAnalysis
 
+
+def count_while_and_if_statements(source_code):
+    # Parse the source code into an AST
+    tree = ast.parse(source_code)
+    
+    # Initialize counters
+    while_count = 0
+    if_count = 0
+
+    # Traverse the AST
+    for node in ast.walk(tree):
+        if isinstance(node, ast.While):
+            while_count += 1
+        elif isinstance(node, ast.If):
+            if_count += 1
+
+    return while_count, if_count
 
 class BranchCoverage(BaseAnalysis):
     def __init__(self, **kwargs):
@@ -10,6 +28,7 @@ class BranchCoverage(BaseAnalysis):
         self.iids = set()
 
     def enter_control_flow(self, dyn_ast: str, iid: int, cond_value: bool) -> Optional[bool]:
+        print(dyn_ast)
         self.branches[(iid, bool(cond_value))] = self.branches.get((iid, bool(cond_value)), 0) + 1
         self.iids.add(iid)
     
