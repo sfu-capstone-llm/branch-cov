@@ -1,0 +1,26 @@
+{
+  "next_iid": 3,
+  "iid_to_location": {
+    "0": {
+      "file": "/Users/marcus/repos/branch-cov/program1.py.orig",
+      "start_line": 5,
+      "start_column": 4,
+      "end_line": 9,
+      "end_column": 16
+    },
+    "1": {
+      "file": "/Users/marcus/repos/branch-cov/program1.py.orig",
+      "start_line": 7,
+      "start_column": 8,
+      "end_line": 8,
+      "end_column": 20
+    },
+    "2": {
+      "file": "/Users/marcus/repos/branch-cov/program1.py.orig",
+      "start_line": 3,
+      "start_column": 0,
+      "end_line": 9,
+      "end_column": 16
+    }
+  }
+}
