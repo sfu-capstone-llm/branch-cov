@@ -5,7 +5,7 @@
 from dynapyt.runtime import RuntimeEngine
 _rt = RuntimeEngine()
 
-_dynapyt_ast_ = "/Users/marcus/repos/branch-cov/program1.py" + ".orig"
+_dynapyt_ast_ = "/Users/brianrahadi/para/projects/courses/fall-24/cmpt479/repos/branch-cov/program1.py" + ".orig"
 try:
     a = 20
     if _rt._enter_if_(_dynapyt_ast_, 2, a < 20):
